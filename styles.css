@@ -1,0 +1,84 @@
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+  }
+
+  .parent {
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .child {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+  }
+  h2 {
+    margin: 0;
+    /* margin-bottom: 10px; */
+  }
+  body {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+
+  @keyframes colorChange {
+    0% { background-color: red; }
+    100% { background-color: blue; }
+  }
+  .animated {
+    animation: colorChange 5s infinite alternate;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: green;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: red;
+  }
+  
+  .circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #000;
+  }
+  .circular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
+  
+  
+  
